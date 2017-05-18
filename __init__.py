@@ -64,7 +64,3 @@ class DQuotNotifications:
                     'message': self.warnings[msg.get_attr('QUOTA_NL_A_WARNING')] }))
             time.sleep(0.1)
 
-
-#a = DQuotNotifications(provider=DQuotNotificationProviderStdout()).run()
-a = DQuotNotifications(provider=DQuotNotificationProviderRedis(port=6380)).run()
-#a = DQuotNotifications(provider=DQuotNotificationProviderRabbitMQ()).run()
