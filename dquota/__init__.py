@@ -31,10 +31,17 @@ class DQuotSocket(GenericNetlinkSocket):
     def __init__(self):
         GenericNetlinkSocket.__init__(self)
         self.marshal = MarshalDQuot()
+        if kernel[0] <= 2:
+            self.bind(groups=0xffffff)
+        else:
+            self.bind()
+        for group in self.mcast_groups:
+            self.add_membership(group)
 
     def bind(self, groups=0, async=False):
         GenericNetlinkSocket.bind(self, 'VFS_DQUOT', dquotmsg,
                                   groups, None, async)
+
 
 class DQuotNotifications:
     def __init__(self, provider):
