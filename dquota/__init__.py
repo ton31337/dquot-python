@@ -1,5 +1,6 @@
 import time
 import json
+from pyroute2.config import kernel
 from pyroute2.netlink import genlmsg
 from pyroute2.netlink.generic import GenericNetlinkSocket
 from pyroute2.netlink.nlsocket import Marshal
