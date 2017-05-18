@@ -10,8 +10,7 @@ setup(
     packages = find_packages(),
     install_requires = [
         'pika',
-        'redis',
-        'json',
+        'redis'
     ]
 )
 
