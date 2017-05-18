@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
     name = 'dquota',
-    version = '0.0.8',
+    version = '0.1',
     author = 'Donatas Abraitis',
     author_email = 'donatas.abraitis@gmail.com',
     description = 'Handle quota notifications using generic netlink',

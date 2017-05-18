@@ -1,8 +1,5 @@
 import time
 import json
-from dquota.providers.stdout import DQuotNotificationProviderStdout
-from dquota.providers.redis import DQuotNotificationProviderRedis
-from dquota.providers.rabbitmq import DQuotNotificationProviderRabbitMQ
 from pyroute2.netlink import genlmsg
 from pyroute2.netlink.generic import GenericNetlinkSocket
 from pyroute2.netlink.nlsocket import Marshal
