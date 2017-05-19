@@ -60,8 +60,6 @@ class DQuotNotifications:
         ]
 
     def run(self):
-        self.ds.bind()
-        self.ds.add_membership('events')
         while True:
             for msg in self.ds.get():
                 self.provider.send(json.dumps({
