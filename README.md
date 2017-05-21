@@ -1,3 +1,7 @@
 ## Install
 
-* pip install dquot-python
+* pip install dquot
+
+## Usage
+
+See examples/
