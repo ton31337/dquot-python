@@ -1,6 +1,6 @@
 ## Install
 
-* pip install dquot
+* pip install dquota
 
 ## Usage
 
