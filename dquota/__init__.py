@@ -38,7 +38,7 @@ class DQuotSocket(GenericNetlinkSocket):
 
     def bind(self, groups=0, async=False):
         GenericNetlinkSocket.bind(self, 'VFS_DQUOT', dquotmsg,
-                                  groups, None, async)
+                                  groups, None)
 
 
 class DQuotNotifications:
